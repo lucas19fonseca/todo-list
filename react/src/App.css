@@ -3,22 +3,24 @@ body{
     background: #f4f4f4;
     padding: 30px;
     color: #333;
-    background-image: url(./assets/img/caption.jpg);
     background-position: center;
     background-size: cover;
+    background-color: #333;
 }
 .app{
     max-width: 600px;
     margin: 0 auto 300px;
-    background-color: #efefef;
+    background-color: #080831;
     padding: 20px 30px;
     border-radius: 10px;
 }
 h1{
     text-align: center;
+    color: #ff5403;
 }
 h2{
     margin-bottom: 10px;
+    color: #ff5403;
 }
 p{
     margin: 10px 0;
@@ -71,4 +73,9 @@ input,select{
     border: 1px solid #DDD;
     border-radius: 3px;
     width: 100%;
+}
+.search{
+    border-bottom:1px solid #555;
+    margin-bottom: 20px;
+    padding-bottom:20px ;
 }

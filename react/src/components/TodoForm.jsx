@@ -6,21 +6,22 @@ const TodoForm = ({ addTodo }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (!value || !category) return; // Corrigido para verificar se os dois campos estão preenchidos
+    if (!value || !category) return;
     addTodo(value, category);
     setValue("");
     setCategory("");
   };
 
   return (
-    <div className='todo-form'>
+    <div className="todo-form">
+      l
       <h2>Criar tarefa:</h2>   
       <form onSubmit={handleSubmit}>
         <input
           type="text"
           value={value}
-          placeholder='Digite o título da tarefa'
-          onChange={(e) => setValue(e.target.value)} // Corrigido para atualizar 'value'
+          placeholder="Digite o título da tarefa"
+          onChange={(e) => setValue(e.target.value)}
         />
         <select
           value={category}
@@ -31,7 +32,7 @@ const TodoForm = ({ addTodo }) => {
           <option value="Pessoal">Pessoal</option>    
           <option value="Estudos">Estudos</option>       
         </select>    
-        <button type='submit'>Criar tarefa</button>
+        <button type="submit">Criar tarefa</button>
       </form> 
     </div>
   );
